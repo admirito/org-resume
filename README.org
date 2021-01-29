@@ -591,9 +591,9 @@ Choose fonts for use with xelatex. Minion and Myriad are widely available, from
 Adobe. Inconsolata is used as monospace font.
 
 #+BEGIN_SRC latex
-  \setromanfont[Mapping={tex-text},Numbers={OldStyle}]{Minion Pro}
-  \setsansfont[Mapping=tex-text,Colour=theMainColor]{Myriad Pro}
-  \setmonofont[Mapping=tex-text,Scale=0.9]{Inconsolata}
+  \setromanfont[Mapping={tex-text},Numbers={OldStyle}]{STIX}
+  \setsansfont[Mapping=tex-text,Colour=theMainColor]{Universalis ADF Std}
+  \setmonofont[Mapping=tex-text,Scale=0.9]{Ubuntu Mono}
 #+END_SRC
 ***** Document title
 #+BEGIN_SRC latex
