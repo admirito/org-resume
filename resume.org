@@ -1,5 +1,5 @@
 #+TITLE: Curiculum Vitae
-#+AUTHOR: Xavier Garrido
+#+AUTHOR: Mohammad Razavi
 #+KEYWORDS: vita, CV, resume
 #+OPTIONS: toc:nil num:nil
 #+STARTUP: entitiespretty

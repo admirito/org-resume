@@ -1,5 +1,5 @@
 #+TITLE:  Curiculum Vitæ
-#+AUTHOR: Xavier Garrido
+#+AUTHOR: Mohammad Razavi
 
 * Introduction
 
@@ -25,22 +25,24 @@ publish the CV into =html= and =pdf=, respectively.
 #+NAME: html-postamble
 #+BEGIN_SRC shell :tangle no :results output
   if [ -d .git ]; then
-      LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:'<i class=\"fab fa-github-alt\"></i> commit <a href=https://github.com/xgarrido/org-resume/commit/%H>%h</a> - %ad'
+      LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:'<i class=\"fab fa-github-alt\"></i> commit <a href=https://github.com/admirito/org-resume/commit/%H>%h</a> - %ad'
   fi
 #+END_SRC
 *** Building html preamble
 #+NAME: html-preamble
 #+BEGIN_SRC shell :tangle no :results output
   preamble+='<div id=\"address\">'
-  preamble+='<span class=\"name\">Xavier Garrido</span><br>'
-  preamble+='<a href=\"http://www.ijclab.in2p3.fr\">IJCLab</a><br>'
-  preamble+='Paris-Saclay University, Orsay<br>'
+  preamble+='<span class=\"name\">Mohammad Razavi</span><br>'
+  preamble+='Developer, Softwer Designer, DevOps specialist<br>'
+  preamble+='Esfahan, Iran<br>'
   preamble+='</div>'
   preamble+='<div id=\"contact\">'
   preamble+='<span class=\"name\">&nbsp;</span><br>'
-  preamble+='(33) 1 64 46 84 28<br>'
-  preamble+='<a href=\"http://xgarrido.github.io\">xgarrido.github.io</a><br>'
-  preamble+='<a href=\"mailto:garrido@ijclab.in2p3.fr\">xavier.garrido@ijclab.in2p3.fr</a>'
+  preamble+='Skype: <a href=\"https://tinyurl.com/skype-mrazavi64-add\">mrazavi64</a><br>'
+  preamble+='Twitter: <a href=\"https://twitter.com/admirito\">@admirito</a><br>'
+  preamble+='GitHub: <a href=\"https://github.com/admirito\">admirito</a><br>'
+  preamble+='mrazavi64 at gmail<br>'
+  preamble+='<a href=\"https://admirito.github.io/org-resume\">admirito.github.io/org-resume</a><br>'
   preamble+='</div>'
   echo -ne $preamble
 #+END_SRC
@@ -422,10 +424,10 @@ call. For the time being, I have only copied/pasted how to declare such options
 but do not use it.
 #+BEGIN_SRC latex :tangle no
   \RequirePackage{ifthen}
-  \newboolean{@fr} %
-  \setboolean{@fr}{false} %
-  \DeclareOption{fr}{
-    \setboolean{@fr}{true}
+  \newboolean{@fa} %
+  \setboolean{@fa}{false} %
+  \DeclareOption{fa}{
+    \setboolean{@fa}{true}
   }
   \ProcessOptions
 #+END_SRC
@@ -548,10 +550,12 @@ These values can be overloaded within the org file using =#+LATEX_HEADER=
 command.
 
 #+BEGIN_SRC latex
-  \def\myemail{xavier.garrido@lal.in2p3.fr}
-  \def\myweb{xavier.github.io}
-  \def\myphone{+33 (0)1 64 46 84 28}
-  \def\myfax{+33 (0)1 69 07 94 04}
+  \def\myemail{mrazavi64 at gmail}
+  \def\myweb{admirito.github.io/org-resume}
+  \def\myskype{mrazavi64}
+  \def\myskypelink{https://tinyurl.com/skype-mrazavi64-add}
+  \def\mytwitter{admirito}
+  \def\mygithub{admirito}
 #+END_SRC
 ***** Colors
 #+BEGIN_SRC latex
@@ -598,19 +602,19 @@ Adobe. Inconsolata is used as monospace font.
 ***** Document title
 #+BEGIN_SRC latex
   \RequirePackage{ifthen}
-  \newboolean{@fr} %
-  \setboolean{@fr}{false} %
-  \DeclareOption{fr}{
-    \setboolean{@fr}{true}
+  \newboolean{@fa} %
+  \setboolean{@fa}{false} %
+  \DeclareOption{fa}{
+    \setboolean{@fa}{true}
   }
   \ProcessOptions
   \newcommand{\mytitle}{}
-  \ifthenelse{\boolean{@fr}}{
-  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize \href{http://www.lal.in2p3.fr}{Laboratoire de l'Accélérateur Linéaire}
-        \\ Bâtiment 200, \\ Université Paris-Sud, \\ \vspace{-0.05in} 91898 Orsay Cedex}
+  \ifthenelse{\boolean{@fa}}{
+  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize توسعه‌دهنده
+        \vspace{+0.05in} \\ اصفهان, \\ \vspace{-0.05in} ایران}
   }{
-  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize \href{http://www.lal.in2p3.fr}{Laboratoire de l'Accélérateur Linéaire}
-        \\ Building 200, \\ Paris-South University, \\ \vspace{-0.05in} 91898 Orsay Cedex}
+  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Developer, Softwer Designer, \\ \vspace{-0.02in} DevOps specialist
+        \vspace{+0.05in} \\ Esfahan, \\ \vspace{-0.05in} Iran}
   }
   \renewcommand*{\maketitle}{%
     \globalcolor{gray}
@@ -620,14 +624,15 @@ Adobe. Inconsolata is used as monospace font.
     \hfill
     \hfill
     \begin{minipage}[t]{1.7in}
-      \ifthenelse{\boolean{@fr}}{
-        \flushright \footnotesize Téléphone:~\myphone \\
+      \ifthenelse{\boolean{@fa}}{
+        \flushright \footnotesize اسکایپ:~{\href{\myskypelink}{\myskype}} \\
       }{
-        \flushright \footnotesize Phone:~\myphone \\
+        \flushright \footnotesize Skype:~{\href{\myskypelink}{\myskype}} \\
       }
-      Fax:~\myfax  \\
-      {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}}} \\
-      {\scriptsize  \texttt{\href{\myweb}{\myweb}}}
+      Twitter:~{\href{https://twitter.com/\mytwitter}{@\mytwitter}}  \\
+      GitHub:~{\href{https://github.com/\mygithub}{\mygithub}}  \\
+      {\scriptsize  \texttt{\myemail}} \\
+      {\scriptsize  \texttt{\href{https://\myweb}{\myweb}}}
     \end{minipage}
     \vspace{10pt}
   }
@@ -699,7 +704,7 @@ Adobe. Inconsolata is used as monospace font.
 #+NAME: vc-status
 #+BEGIN_SRC sh :results output :tangle no
   if [ -d .git ]; then
-      log=$(LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:'commit \\href{https://github.com/xgarrido/org-resume/commit/%H}{\\color{gray!50}\\texttt{%h}} -- %ad')
+      log=$(LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:'commit \\href{https://github.com/admirito/org-resume/commit/%H}{\\color{gray!50}\\texttt{%h}} -- %ad')
       echo '\\renewcommand*{\\PrelimText}{\\textnormal{\\small\\color{gray!50}'${log}'}}'
   fi
 #+END_SRC
