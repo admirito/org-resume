@@ -97,7 +97,7 @@ publish the CV into =html= and =pdf=, respectively.
       /*font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
       font-family: "Open Sans", sans-serif;
       font-size: 12px;
-      color:#777777;
+      color:#111111;
       font-weight:300;
   }
 #+END_SRC
@@ -105,7 +105,7 @@ publish the CV into =html= and =pdf=, respectively.
 ****** Headline
 #+BEGIN_SRC css
   h1, h2, h3, h4, h5, h6 {
-      color:#777777;
+      color:#222222;
       margin:0 0 20px;
   }
 
@@ -136,13 +136,13 @@ publish the CV into =html= and =pdf=, respectively.
 
   a small {
       font-size:11px;
-      color:#777777;
+      color:#333333;
       margin-top:-0.6em;
       display:block;
   }
 
   a:hover small {
-      color:#777777;
+      color:#333333;
   }
 #+END_SRC
 
@@ -161,7 +161,7 @@ publish the CV into =html= and =pdf=, respectively.
 
   code, pre {
       font-family:Inconsolata, Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-      color:#777;
+      color:#3333;
       font-size:12px;
   }
 
