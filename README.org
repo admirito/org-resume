@@ -8,6 +8,20 @@ file style. The resume is done within [[file:resume.org][resume.org]] file. All 
 within this file and a =Makefile= is provided to produce the =html= and =pdf=
 files.
 
+* Acknowledgments
+
+This repository is a fork of Xavier Garrido's [[https://github.com/xgarrido/org-resume][org-resume]] project which
+I have modified it for my personal use. As I have removed his name
+from the resume, I thought I should appreciate his excellent work,
+here.
+
+I have also made small changes in the appearance and the building
+process to make it better for my own use case.
+
+The Xavier's project doesn't have a LICENSE yet, but I have asked him
+personally and he answered me the same as [[https://github.com/xgarrido/org-resume/issues/1][this one]]. So, for now, I am
+going to use it this way.
+
 * Project publish function
 
 This section is used to publish the documentation to =html= and =pdf= in the
