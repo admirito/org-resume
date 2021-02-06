@@ -688,7 +688,7 @@ Adobe. Inconsolata is used as monospace font.
               {} %before
               [] %after
   \ifthenelse{\boolean{cv@oldstyle}}{}{
-    \titlespacing{\subsection}{-5pt}{15pt}{5pt}}
+    \titlespacing{\subsection}{-5pt}{10pt}{20pt}}
 #+END_SRC
 
 ****** =itemize=
