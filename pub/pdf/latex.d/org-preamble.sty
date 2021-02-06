@@ -1,0 +1,55 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{org-preamble}[2013/03/03 v0.01 Bundling of Preamble items for Org to LaTeX export]
+
+\RequirePackage{amsmath,amssymb}
+
+\RequirePackage[cache]{minted}
+
+\RequirePackage{ifxetex}
+\ifxetex
+\RequirePackage{fontspec}
+\RequirePackage{xunicode}
+%%\else
+\fi
+
+\RequirePackage{hyperref}
+
+\RequirePackage{pifont}
+
+\RequirePackage{comment}
+
+\RequirePackage{tikz}
+\usetikzlibrary{positioning,arrows,decorations,backgrounds,patterns,matrix,shapes,fit,calc,shadows,plotmarks,spy,trees}
+
+%%\tikzset{
+%%  external/system call={%
+%%    xelatex -shell-escape
+%%    -halt-on-error -interaction=batchmode
+%%    -jobname "\image" "\texsource"}}
+%%\tikzexternalize[prefix=latex.d/]
+\input "|mkdir -p latex.d"
+\input "|mkdir -p /tmp/latex.d"
+
+\RequirePackage{xspace}
+
+\RequirePackage[normalem]{ulem}
+
+\RequirePackage{relsize}
+
+\newfontfamily{\FA}{FontAwesome}
+\newcommand*{\faicon}[1]{{\FA\csname faicon@#1\endcsname}}
+\expandafter\def\csname faicon@github-alt\endcsname{\symbol{"F113}}\def\faGithubAlt{{\FA\csname faicon@github-alt\endcsname}\xspace}
+\expandafter\def\csname faicon@external-link\endcsname{\symbol{"F08E}}\def\faExternalLink{{\FA\csname faicon@external-link\endcsname}\xspace}
+
+\let\@email\@empty
+\@ifundefined{email}{%
+  \newcommand\email[1]{\gdef\@email{#1}}}{}
+
+\RequirePackage{changepage}
+\newcommand\clearemptydoublepage{%
+  \checkoddpage
+  \ifthenelse{\boolean{oddpage}}%
+             {\null\clearpage\thispagestyle{empty} \null \clearpage}%
+             {\null\clearpage}%
+}
+%%\newcommand{\clearemptydoublepage}{\newpage{\cleardoubleemptypage\thispagestyle{empty}}

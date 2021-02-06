@@ -1,0 +1,146 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cv_style}[2013/11/06 v0.01 Bundling CV LaTeX style]
+
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{
+  family=cv,
+  prefix=cv@
+}
+\DeclareBoolOption[false]{oldstyle}
+\ProcessKeyvalOptions*
+
+\def\myemail{mrazavi64 at gmail}
+\def\myweb{admirito.github.io}
+\def\myskype{mrazavi64}
+\def\myskypelink{https://tinyurl.com/skype-mrazavi64-add}
+\def\mytwitter{admirito}
+\def\mygithub{admirito}
+
+\definecolor{red}{RGB}{221,42,43}
+\definecolor{green}{RGB}{105,182,40}
+\definecolor{blue}{RGB}{0,51,153}
+\definecolor{gray}{RGB}{25,25,25}
+%\definecolor{red}{HTML}{D43F3F}
+%\definecolor{blue}{HTML}{00ACE9}
+%\definecolor{green}{HTML}{6A9A1F}
+\colorlet{theMainColor}{blue}
+\colorlet{theRefColor}{blue!90}
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{a4wide}
+\hypersetup{
+  xetex,
+  colorlinks=true,
+  urlcolor=theRefColor,
+  filecolor=theRefColor,
+  linkcolor=theRefColor,
+  plainpages=false,
+  pdfpagelabels,
+  bookmarksnumbered,
+  pagebackref
+}
+\setlength{\parindent}{0cm}
+
+\setromanfont[Mapping={tex-text},Numbers={OldStyle}]{STIX}
+\setsansfont[Mapping=tex-text,Colour=theMainColor]{Universalis ADF Std}
+\setmonofont[Mapping=tex-text,Scale=0.9]{Ubuntu Mono}
+
+\RequirePackage{ifthen}
+\newboolean{@fa} %
+\setboolean{@fa}{false} %
+\DeclareOption{fa}{
+  \setboolean{@fa}{true}
+}
+\ProcessOptions
+\newcommand{\mytitle}{}
+\ifthenelse{\boolean{@fa}}{
+\renewcommand{\mytitle}{\normalsize\@author\\\footnotesize توسعه‌دهنده
+      \vspace{+0.05in} \\ اصفهان, \\ \vspace{-0.05in} ایران}
+}{
+\renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Developer, Softwer Designer, \\ \vspace{-0.02in} DevOps specialist
+      \vspace{+0.05in} \\ Esfahan, \\ \vspace{-0.05in} Iran}
+}
+\renewcommand*{\maketitle}{%
+  \globalcolor{gray}
+  \begin{minipage}[t]{2.95in}
+    \flushleft {\mytitle}
+  \end{minipage}
+  \hfill
+  \hfill
+  \begin{minipage}[t]{1.7in}
+    \ifthenelse{\boolean{@fa}}{
+      \flushright \footnotesize اسکایپ:~{\href{\myskypelink}{\myskype}} \\
+    }{
+      \flushright \footnotesize Skype:~{\href{\myskypelink}{\myskype}} \\
+    }
+    Twitter:~{\href{https://twitter.com/\mytwitter}{@\mytwitter}}  \\
+    GitHub:~{\href{https://github.com/\mygithub}{\mygithub}}  \\
+    {\scriptsize  \texttt{\myemail}} \\
+    {\scriptsize  \texttt{\href{https://\myweb}{\myweb}}}
+  \end{minipage}
+  \vspace{10pt}
+}
+
+\ifthenelse{\boolean{cv@oldstyle}}{
+  \titleformat{\section}[block] %command
+              {\usekomafont{sectioning}\usekomafont{section}%
+                \tikz[overlay] \shade[left color=white,right color=blue] (0,-0.7ex) rectangle (\textwidth,-0.8ex);}%} %format
+              {\thesection} %label
+              {1em} %sep
+              {} %before
+              [] %after
+              \titlespacing{\section}{0pt}{10pt}{5pt}}{
+  \titleformat{\section} %command
+              [leftmargin] %shape
+              {\footnotesize\bfseries\sffamily\raggedleft} %format
+              {} %label
+              {0pt} %sep
+              {\lowercase} %before
+              [] %after
+              \titlespacing{\section}{90pt}{10pt}{15pt}}
+
+\titleformat{\subsection} %command
+            {\bfseries\itshape} %format
+            {} %label
+            {0pt} %sep
+            {} %before
+            [] %after
+\ifthenelse{\boolean{cv@oldstyle}}{}{
+  \titlespacing{\subsection}{-5pt}{10pt}{20pt}}
+
+\ifthenelse{\boolean{cv@oldstyle}}{}{
+  \renewenvironment{itemize}{
+    \begin{list}{\textbullet}{%
+        \setlength{\itemsep}{0.05in}
+        \setlength{\parsep}{0in}
+        \setlength{\parskip}{0in}
+        \setlength{\topsep}{0in}
+        \setlength{\partopsep}{0in}
+        \setlength{\leftmargin}{0.1in}}
+      \vspace{-5mm}}{\end{list}}
+  %%  \renewenvironment{enumerate}{
+  %%    \begin{list}{}{%
+  %%        \setlength{\itemsep}{0.05in}
+  %%        \setlength{\parsep}{0in}
+  %%        \setlength{\parskip}{0in}
+  %%        \setlength{\topsep}{0in}
+  %%        \setlength{\partopsep}{0in}
+  %%        \setlength{\leftmargin}{0.1in}}}{\end{list}}
+}
+
+\RequirePackage{ifthen}
+\newboolean{@novc} %
+\setboolean{@novc}{false} %
+\DeclareOption{novc}{
+  \setboolean{@novc}{true}
+}
+\ProcessOptions
+\ifthenelse{\boolean{@novc}}{}{
+  \RequirePackage{prelim2e}
+  \renewcommand*{\PrelimText}{\textnormal{\small\color{gray!50}commit \href{https://github.com/admirito/org-resume/commit/f1ac3648589c9dd3866958ee4f5587358d629d58}{\color{gray!50}\texttt{f1ac364}} -- 2021-02-06}}
+  
+}
