@@ -11,11 +11,11 @@ automation.
 
 I have designed software and worked with teams to implement and
 operate them over years. I love debugging, working on optimization
-problems and solving challenges.  I have experience with developing
+problems and solving challenges.  I have experience in developing
 highly scalable systems.
 
-I am highly skilled in python programming language although I have
-experience in writing software in other languages as well.
+I am skilled in python programming language although I have experience
+in writing software in other languages as well.
 #+END_QUOTE
 
 * Appointments
@@ -28,39 +28,41 @@ Developer in the PayamPardaz Company, 2011 -- 2013
 
 * Education
 
-Master of Arts in Computer Software Engineering at the University of Isfahan, Iran, 2009 -- 2011
+Master of Arts in Computer Software Engineering at the University of
+Isfahan, Iran, 2009 -- 2011
 
-Bachelor of Arts in Computer Software Engineering at the University of Isfahan, Iran, 2005 -- 2009
+Bachelor of Arts in Computer Software Engineering at the University of
+Isfahan, Iran, 2005 -- 2009
 
 * Experiences
 ** Main Contributor
 
-- An [[https://www.rsyslog.com/][Rsyslog]] plugin developed in Golang to send logs with very high
-  rates over gRPC channels to a legacy software, 2020 -- /Present/
+- An [[https://www.rsyslog.com/][Rsyslog]] plugin developed in Golang to send logs with high rates
+  over gRPC channels to a legacy software, 2020 -- /Present/
 
-- Dockerize over 10 software projects with sophisticated network
-  communications and disk persistence, 2017 -- 2019
+- Containerize over 10 software projects with more than 50 containers
+  in total for migration to kubernetes, 2017 -- 2019
 
 - Plugin-able system with REST API for communication with network
   devices over protocols such as HTTP/HTTPS, SSH, Telnet, SMTP, etc,
-  developed with Python, with more than 15 plugins developed
-  by dozens of programmers, 2015 -- /Present/
+  developed with Python, with more than 15 plugins developed by other
+  programmers, 2015 -- /Present/
 
 - Bash scripts to implement high availability with [[https://www.linbit.com/drbd/][DRBD]] and [[https://github.com/acassen/keepalived][keepalived]]
-  for a complex system with virtual machines, 2015 -- 2016
+  for a system with virtual machines, 2015 -- 2016
 
-- A sophisticated build-system with Makefiles and bash/python scripts
-  for an XML knowledge base, 2014 -- /Present/
+- A build-system with Makefiles and bash/python scripts for an XML
+  knowledge base with over 20 repositories, 2014 -- /Present/
 
-- A Python/Flask project for monitoring and management of a complex
-  system with virtual machines and high security concerns with over 50
-  API services, 2014 -- 2019
+- A Python/Flask project for monitoring and management of a system
+  with virtual machines and high security concerns with over 50 API
+  services, 2014 -- 2019
 
 - A high throughput, log collection/management system developed in
-  Python with multi-processing/multi-threading design and
-  sophisticated pipelines with support for MongoDB, used heavily in
-  production in various organizations, some of them with over a
-  hundred terabytes of data, 2013 -- /Present/
+  Python with multi-processing/multi-threading design and pipelines
+  with support for MongoDB, used heavily in production in various
+  organizations, some of them with over a hundred terabytes of data,
+  2013 -- /Present/
 
 - A C++ library to implement The Intrusion Detection Message Exchange
   Format ([[https://tools.ietf.org/html/rfc4765][RFC 4765]]), 2012 -- /Present/
@@ -80,7 +82,8 @@ Bachelor of Arts in Computer Software Engineering at the University of Isfahan, 
 
 - Django based web portal for a monitoring system, 2013 -- /Present/
 
-- A scalable, high-available event processing system developed with C++, 2012 -- /Present/
+- A scalable, high-available event processing system developed with
+  C++, 2012 -- /Present/
 
 * Open-source
 
@@ -91,12 +94,15 @@ Bachelor of Arts in Computer Software Engineering at the University of Isfahan, 
 
 - Greenbone Vulnerability Management [[https://launchpad.net/~mrazavi/+archive/ubuntu/gvm][Ubuntu PPA]], 2019 -- /Present/
 
-- GitLab CI tools for debian packaging, [[https://github.com/admirito/kayna][kayna]] on my GitHub, 2016 -- /Present/
+- GitLab CI tools for debian packaging, [[https://github.com/admirito/kayna][kayna]] on my GitHub, 2016 --
+  /Present/
 
 - [[https://www.backbox.org/][BackBox]] Linux distribution repository maintainer, 2015 -- 2018
 
-- [[https://www.openvas.org/][OpenVAS]] Vulnerability Assessment Scanner community package maintainer, 2015 -- 2018
+- [[https://www.openvas.org/][OpenVAS]] Vulnerability Assessment Scanner community package
+  maintainer, 2015 -- 2018
 
-- Automatic Debian installation system with preseeds, [[https://github.com/admirito/durian][durian]] on my GitHub, 2015
+- Automatic Debian installation system with preseeds, [[https://github.com/admirito/durian][durian]] on my
+  GitHub, 2015
 
 - Various contributions on open-source projects, see my [[https://github.com/admirito/][GitHub]]
