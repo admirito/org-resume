@@ -53,7 +53,7 @@ publish the CV into =html= and =pdf=, respectively.
   preamble+='<div id=\"contact\">'
   preamble+='<span class=\"name\">&nbsp;</span><br>'
   preamble+='Skype: <a href=\"https://tinyurl.com/skype-mrazavi64-add\">mrazavi64</a><br>'
-  preamble+='Twitter: <a href=\"https://twitter.com/admirito\">@admirito</a><br>'
+  preamble+='LinkedIn: <a href=\"https://www.linkedin.com/in/admirito/\">admirito</a><br>'
   preamble+='GitHub: <a href=\"https://github.com/admirito\">admirito</a><br>'
   preamble+='mrazavi64 at gmail<br>'
   preamble+='<a href=\"https://admirito.github.io/org-resume\">admirito.github.io/org-resume</a><br>'
@@ -568,7 +568,7 @@ command.
   \def\myweb{admirito.github.io/org-resume}
   \def\myskype{mrazavi64}
   \def\myskypelink{https://tinyurl.com/skype-mrazavi64-add}
-  \def\mytwitter{admirito}
+  \def\mylinkedin{admirito}
   \def\mygithub{admirito}
 #+END_SRC
 ***** Colors
@@ -643,7 +643,7 @@ Adobe. Inconsolata is used as monospace font.
       }{
         \flushright \footnotesize Skype:~{\href{\myskypelink}{\myskype}} \\
       }
-      Twitter:~{\href{https://twitter.com/\mytwitter}{@\mytwitter}}  \\
+      LinkedIn:~{\href{https://www.linkedin.com/in/\mylinkedin}{\mylinkedin}}  \\
       GitHub:~{\href{https://github.com/\mygithub}{\mygithub}}  \\
       {\scriptsize  \texttt{\myemail}} \\
       {\scriptsize  \texttt{\href{https://\myweb}{\myweb}}}
