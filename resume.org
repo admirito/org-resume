@@ -37,6 +37,10 @@ Isfahan, Iran, 2005 -- 2009
 * Experiences
 ** Main Contributor
 
+- A scalable high-performance streaming data generator that can be
+  used to simulate the real-time input for various systems, developed
+  with Python, 2022 -- /Present/
+
 - An [[https://www.rsyslog.com/][Rsyslog]] plugin developed in Golang to send logs with high rates
   over gRPC channels to a legacy software, 2020 -- /Present/
 
@@ -88,6 +92,12 @@ Isfahan, Iran, 2005 -- 2009
 * Open-source
 
 ** Activities
+
+- An extension for MongoDB's Python driver pymongo for auditing,
+  [[https://github.com/admirito/pymongowatch][PyMongoWatch]] on my GitHub, 2022 -- /Present/
+
+- A proposal/specification for defining interactive form-based UIs,
+  [[https://github.com/admirito/pitaya-form][PitayaForm]] on my GitHub, 2022 -- /Present/
 
 - Open-source tools to deploy Greenbone Vulnerability Management ([[https://community.greenbone.net/][GVM]])
   with containers, [[https://github.com/admirito/gvm-containers][gvm-containers]] on my GitHub, 2019 -- /Present/
