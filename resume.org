@@ -5,20 +5,103 @@
 #+STARTUP: entitiespretty
 
 #+BEGIN_QUOTE
-As a programmer, I specialize in back-end programming but beyond
-application development I am expert in system design, scripting and
-automation.
+I am a senior back-end developer with 10 years of experience working
+on scalable architectures, distributed computing, big data analytics,
+micro services, and cloud infrastructures.
 
-I have designed software and worked with teams to implement and
-operate them over years. I love debugging, working on optimization
-problems and solving challenges.  I have experience in developing
-highly scalable systems.
+I have worked with teams to develop network and security monitoring
+software for organizations ranging from start-ups to national
+enterprises.
 
-I am skilled in python programming language although I have experience
-in writing software in other languages as well.
+I excel at team leadership, software development, micro services,
+automation and cloud computing.
 #+END_QUOTE
 
-* Appointments
+* Skills
+
+- Software design and development
+- Debugging and troubleshooting
+- Optimization and design for scalability
+- Strong Linux background
+- Networking and cybersecurity knowledge
+- Automation and deployment
+- Agile software development
+
+* Experiences
+
+** Programming and Software Design
+
+- Lead and participate in the design and development of 4 applications
+  with Python and Flask framework with REST API / gRPC service
+  methods.
+
+- Refactor and migrate 5 projects with thousands of Python 2 code
+  to python 3, add hundreds of new unit tests to legacy software,
+  maintain stability in more than 20 production environments.
+
+- [[https://github.com/admirito/pitaya-form][PitayaForm]] on my GitHub: A proposal/specification for defining
+  interactive form-based UIs
+
+- Develop 3 applications with Python multiprocessing framework to
+  handle CPU intensive tasks on NUMA systems.
+
+- Reimplement a Python tool with Golang to handle loads of up to 10x.
+
+- Developed two related C++ back-end engines for intrusion detection
+  and extract the common code into a software library used in other
+  projects as well.
+
+- Contribute to the design, implementation and maintenance of an
+  SIEM/EDR product with large scale enterprises customers.
+
+- Report bugs and implement accepted merge-requests to fix problems of
+  well-established FOSS software in Python, C/C++, Java, etc.
+
+** Data Engineering
+
+- Adapt a data store software with 4 new DBMS and data tools for
+  better handling of big loads and more flexible analytics.
+
+- [[https://github.com/admirito/pymongowatch][PyMongoWatch]] on my GitHub: An extension for MongoDB's Python driver
+  for auditing.
+
+- Design at least 5 migrations of data schema with JS for a MongoDB
+  database with terabytes of data in a production system.
+
+- Design schema, automatic integrity tests and a build-system with
+  Makefiles and bash/python scripts for an XML knowledge base with
+  over 20 repositories.
+
+- Build a high-throughput fake data generator with Python
+  multiprocessing for performance tests.
+
+** DevOps
+
+- Containerize over 10 legacy software projects with more than 50
+  containers in total for migration to kubernetes.
+
+- Implement and maintain over 20 helm charts, 50 debian packages and
+  4 software repositories.
+
+- [[https://github.com/admirito/gvm-containers][gvm-containers]]: Docker/Kubernetes tools to deploy Greenbone
+  Vulnerability Management ([[https://community.greenbone.net/][GVM]]), 80-stars / 50-forks on my GitHub.
+
+- Design and implement an ansible playbook to setup kubernetes with
+  MetalLB, CephFS, SQL/NoSQL databases and state-full applications.
+
+- Fork [[https://github.com/skupperproject/skupper-proxy][skupper-proxy]] kubernetes controller FOSS project and add
+  features for better maintenance of inter-cluster communications,
+  used by the DevOps team.
+
+- [[https://launchpad.net/~mrazavi/+archive/ubuntu/gvm][GVM Ubuntu PPA]]: About 10 C++/Python based debian Packages,
+  maintained more than 5 years for hundreds of users.
+
+- [[https://github.com/admirito/kayna][kayna]] on my GitHub: GitLab CI tools for debian packaging.
+
+- Use bash scripts to implement high availability with DRBD and
+  keepalived for a system with virtual machines.
+
+* Employment
 
 Senior Developer in the PayamPardaz Company, 2015 -- /Present/
 
@@ -34,85 +117,17 @@ Isfahan, Iran, 2009 -- 2011
 Bachelor of Arts in Computer Software Engineering at the University of
 Isfahan, Iran, 2005 -- 2009
 
-* Experiences
-** Main Contributor
+* Community
 
-- A scalable high-performance streaming data generator that can be
-  used to simulate the real-time input for various systems, developed
-  with Python, 2022 -- /Present/
+[[https://www.backbox.org/][BackBox]] Linux distribution repository maintainer, 2015 - 2018
 
-- An [[https://www.rsyslog.com/][Rsyslog]] plugin developed in Golang to send logs with high rates
-  over gRPC channels to a legacy software, 2020 -- /Present/
+[[https://www.openvas.org/][OpenVAS]] Vulnerability Assessment Scanner community package maintainer,
+2015 - 2018
 
-- Containerize over 10 software projects with more than 50 containers
-  in total for migration to kubernetes, 2017 -- 2019
+* Honors
 
-- Plugin-able system with REST API for communication with network
-  devices over protocols such as HTTP/HTTPS, SSH, Telnet, SMTP, etc,
-  developed with Python, with more than 15 plugins developed by other
-  programmers, 2015 -- /Present/
+ACM International Collegiate Programming Contest (ICPC), Asia region,
+Tehran site contestant, 2009
 
-- Bash scripts to implement high availability with [[https://www.linbit.com/drbd/][DRBD]] and [[https://github.com/acassen/keepalived][keepalived]]
-  for a system with virtual machines, 2015 -- 2016
-
-- A build-system with Makefiles and bash/python scripts for an XML
-  knowledge base with over 20 repositories, 2014 -- /Present/
-
-- A Python/Flask project for monitoring and management of a system
-  with virtual machines and high security concerns with over 50 API
-  services, 2014 -- 2019
-
-- A high throughput, log collection/management system developed in
-  Python with multi-processing/multi-threading design and pipelines
-  with support for MongoDB, used heavily in production in various
-  organizations, some of them with over a hundred terabytes of data,
-  2013 -- /Present/
-
-- A C++ library to implement The Intrusion Detection Message Exchange
-  Format ([[https://tools.ietf.org/html/rfc4765][RFC 4765]]), 2012 -- /Present/
-
-** Significant Contributor
-
-- Flexible and customizable Ansible playbooks to setup kubernetes
-  clusters and a distributed software with a distributed file system,
-  dozens of high available databases and over cluster communications
-  with [[https://skupper.io/][skupper]], 2018 -- /Present/
-
-- A [[https://helm.sh/][helm]] plugin to add support for localization, 2019
-
-- Helm charts for dozens of security software components, 2018 -- 2020
-
-- Management Information Base (MIB) files for a complex system, 2018
-
-- Django based web portal for a monitoring system, 2013 -- /Present/
-
-- A scalable, high-available event processing system developed with
-  C++, 2012 -- /Present/
-
-* Open-source
-
-** Activities
-
-- An extension for MongoDB's Python driver pymongo for auditing,
-  [[https://github.com/admirito/pymongowatch][PyMongoWatch]] on my GitHub, 2022 -- /Present/
-
-- A proposal/specification for defining interactive form-based UIs,
-  [[https://github.com/admirito/pitaya-form][PitayaForm]] on my GitHub, 2022 -- /Present/
-
-- Open-source tools to deploy Greenbone Vulnerability Management ([[https://community.greenbone.net/][GVM]])
-  with containers, [[https://github.com/admirito/gvm-containers][gvm-containers]] on my GitHub, 2019 -- /Present/
-
-- Greenbone Vulnerability Management [[https://launchpad.net/~mrazavi/+archive/ubuntu/gvm][Ubuntu PPA]], 2019 -- /Present/
-
-- GitLab CI tools for debian packaging, [[https://github.com/admirito/kayna][kayna]] on my GitHub, 2016 --
-  /Present/
-
-- [[https://www.backbox.org/][BackBox]] Linux distribution repository maintainer, 2015 -- 2018
-
-- [[https://www.openvas.org/][OpenVAS]] Vulnerability Assessment Scanner community package
-  maintainer, 2015 -- 2018
-
-- Automatic Debian installation system with preseeds, [[https://github.com/admirito/durian][durian]] on my
-  GitHub, 2015
-
-- Various contributions on open-source projects, see my [[https://github.com/admirito/][GitHub]]
+RoboCup, Mixed Reality League, the winner of the 3rd place ribbon,
+Suzhou international challenges, 2008
