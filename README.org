@@ -47,7 +47,7 @@ publish the CV into =html= and =pdf=, respectively.
 #+BEGIN_SRC shell :tangle no :results output
   preamble+='<div id=\"address\">'
   preamble+='<span class=\"name\">Mohammad Razavi</span><br>'
-  preamble+='Developer, Softwer Designer, DevOps specialist<br>'
+  preamble+='Developer, Software Architect, DevOps specialist<br>'
   preamble+='Esfahan, Iran<br>'
   preamble+='</div>'
   preamble+='<div id=\"contact\">'
@@ -627,7 +627,7 @@ Adobe. Inconsolata is used as monospace font.
   \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize توسعه‌دهنده
         \vspace{+0.05in} \\ اصفهان, \\ \vspace{-0.05in} ایران}
   }{
-  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Developer, Softwer Designer, \\ \vspace{-0.02in} DevOps specialist
+  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Developer, Software Architect, \\ \vspace{-0.02in} DevOps specialist
         \vspace{+0.05in} \\ Esfahan, \\ \vspace{-0.05in} Iran}
   }
   \renewcommand*{\maketitle}{%
