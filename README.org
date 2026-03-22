@@ -47,12 +47,12 @@ publish the CV into =html= and =pdf=, respectively.
 #+BEGIN_SRC shell :tangle no :results output
   preamble+='<div id=\"address\">'
   preamble+='<span class=\"name\">Mohammad Razavi</span><br>'
-  preamble+='Developer, Software Architect, DevOps specialist<br>'
-  preamble+='Esfahan, Iran<br>'
+  preamble+='Software Engineer<br>'
+  preamble+='Berlin, Germany<br>'
   preamble+='</div>'
   preamble+='<div id=\"contact\">'
   preamble+='<span class=\"name\">&nbsp;</span><br>'
-  preamble+='Skype: <a href=\"https://tinyurl.com/skype-mrazavi64-add\">mrazavi64</a><br>'
+  preamble+='Telegram: <a href=\"https://t.me/admirito\">@admirito</a><br>'
   preamble+='LinkedIn: <a href=\"https://www.linkedin.com/in/admirito/\">admirito</a><br>'
   preamble+='GitHub: <a href=\"https://github.com/admirito\">admirito</a><br>'
   preamble+='mrazavi64 at gmail<br>'
@@ -566,8 +566,8 @@ command.
 #+BEGIN_SRC latex
   \def\myemail{mrazavi64 at gmail}
   \def\myweb{admirito.github.io/org-resume}
-  \def\myskype{mrazavi64}
-  \def\myskypelink{https://tinyurl.com/skype-mrazavi64-add}
+  \def\mytelegram{@admirito}
+  \def\mytelegramlink{https://t.me/admirito}
   \def\mylinkedin{admirito}
   \def\mygithub{admirito}
 #+END_SRC
@@ -627,8 +627,8 @@ Adobe. Inconsolata is used as monospace font.
   \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize توسعه‌دهنده
         \vspace{+0.05in} \\ اصفهان, \\ \vspace{-0.05in} ایران}
   }{
-  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Developer, Software Architect, \\ \vspace{-0.02in} DevOps specialist
-        \vspace{+0.05in} \\ Esfahan, \\ \vspace{-0.05in} Iran}
+  \renewcommand{\mytitle}{\normalsize\@author\\\footnotesize Software Engineer
+        \vspace{+0.05in} \\ Berlin, \\ \vspace{-0.05in} Germany}
   }
   \renewcommand*{\maketitle}{%
     \globalcolor{gray}
@@ -639,9 +639,9 @@ Adobe. Inconsolata is used as monospace font.
     \hfill
     \begin{minipage}[t]{1.7in}
       \ifthenelse{\boolean{@fa}}{
-        \flushright \footnotesize اسکایپ:~{\href{\myskypelink}{\myskype}} \\
+        \flushright \footnotesize تلگرام:~{\href{\mytelegramlink}{\mytelegram}} \\
       }{
-        \flushright \footnotesize Skype:~{\href{\myskypelink}{\myskype}} \\
+        \flushright \footnotesize Telegram:~{\href{\mytelegramlink}{\mytelegram}} \\
       }
       LinkedIn:~{\href{https://www.linkedin.com/in/\mylinkedin}{\mylinkedin}}  \\
       GitHub:~{\href{https://github.com/\mygithub}{\mygithub}}  \\

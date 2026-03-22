@@ -5,109 +5,90 @@
 #+STARTUP: entitiespretty
 
 #+BEGIN_QUOTE
-I am a senior back-end developer with 10 years of experience working
-on scalable architectures, distributed computing, big data analytics,
-micro services, and cloud infrastructures.
-
-I have worked with teams to develop network and security monitoring
-software for organizations ranging from start-ups to national
-enterprises.
-
-I excel at team leadership, software development, micro services,
-automation and cloud computing.
+Senior Software Engineer with 15 years of experience in backend
+development, data platforms, and cloud infrastructure. I have built
+and maintained software for security products, ML workflows, and
+live operations in teams ranging from startups to large
+organizations.
 #+END_QUOTE
 
 * Skills
 
-- Software design and development
-- Debugging and troubleshooting
-- Optimization and design for scalability
-- Strong Linux background
-- Networking and cybersecurity knowledge
-- Automation and deployment
-- Agile software development
+Python, Go, C/C++, FastAPI, Flask, gRPC, REST APIs, PostgreSQL,
+MongoDB, Kubernetes, Helm, Docker, Terraform, GCP, Ansible, CI/CD,
+Linux, Prefect
 
-* Experiences
+* Experience
 
-** Programming and Software Design
+** Senior Software Engineer at Ultramarin GmbH, Berlin, Apr 2023 -- /Present/
 
-- Lead and participate in the design and development of 4 applications
-  with Python and Flask framework with REST API / gRPC service
-  methods.
+- Designed and developed an ML model lifecycle and workflow management
+  platform with Python, FastAPI, and Prefect
 
-- Refactor and migrate 5 projects with thousands of Python 2 code
-  to python 3, add hundreds of new unit tests to legacy software,
-  maintain stability in more than 20 production environments.
+- Built core operations platform handling critical daily workflows,
+  supporting the company's growth to over 1B EUR in managed assets
 
-- [[https://github.com/admirito/pitaya-form][PitayaForm]] on my GitHub: A proposal/specification for defining
-  interactive form-based UIs
+- Collaborated directly with ML researchers and portfolio managers to
+  translate requirements into production-grade systems
 
-- Develop 3 applications with Python multiprocessing framework to
-  handle CPU intensive tasks on NUMA systems.
+- Managed cloud infrastructure on GCP with Terraform and GKE
 
-- Reimplement a Python tool with Golang to handle loads of up to 10x.
+- Worked in a team of 6-8 senior and principal engineers maintaining
+  high-reliability, mission-critical systems
 
-- Developed two related C++ back-end engines for intrusion detection
-  and extract the common code into a software library used in other
-  projects as well.
+** Staff Software Engineer at PayamPardaz, Esfahan, 2015 -- 2023
 
-- Contribute to the design, implementation and maintenance of an
-  SIEM/EDR product with large scale enterprises customers.
+- Led design and development of 5+ backend applications with Python,
+  Flask, REST APIs and gRPC services
 
-- Report bugs and implement accepted merge-requests to fix problems of
-  well-established FOSS software in Python, C/C++, Java, etc.
+- Migrated 5 projects (thousands of lines) from Python 2 to Python 3;
+  added hundreds of unit tests; maintained stability across 20+
+  production environments
 
-** Data Engineering
+- Contributed to the design, implementation, and maintenance of an
+  enterprise-scale SIEM/EDR platform serving large organizations
 
-- Adapt a data store software with 4 new DBMS and data tools for
-  better handling of big loads and more flexible analytics.
+- Engineered data solutions across 4 DBMS; designed and executed 5+
+  schema migrations on terabyte-scale MongoDB in production
 
-- [[https://github.com/admirito/pymongowatch][PyMongoWatch]] on my GitHub: An extension for MongoDB's Python driver
-  for auditing.
+- Containerized 10+ legacy projects (50+ containers) for Kubernetes
+  migration; maintained 20+ Helm charts and 50 Debian packages
 
-- Design at least 5 migrations of data schema with JS for a MongoDB
-  database with terabytes of data in a production system.
+- Designed Ansible playbooks for on-premise Kubernetes clusters with
+  MetalLB, CephFS, and SQL/NoSQL databases
 
-- Design schema, automatic integrity tests and a build-system with
-  Makefiles and bash/python scripts for an XML knowledge base with
-  over 20 repositories.
+** Software Engineer → Senior Software Engineer at AmnGostar / PayamPardaz, Esfahan, 2011 -- 2015
 
-- Build a high-throughput fake data generator with Python
-  multiprocessing for performance tests.
+- Developed two C++ backend engines for intrusion detection; extracted
+  shared library reused across projects
 
-** DevOps
+- Built Python multiprocessing applications for CPU-intensive tasks on
+  NUMA architectures
 
-- Containerize over 10 legacy software projects with more than 50
-  containers in total for migration to kubernetes.
+- Reimplemented a Python tool in Go, achieving 10x throughput
+  improvement
 
-- Implement and maintain over 20 helm charts, 50 debian packages and
-  4 software repositories.
+- Contributed bug reports and accepted merge requests to established
+  open-source projects in Python, C/C++, and Java
 
-- [[https://github.com/admirito/gvm-containers][gvm-containers]]: Docker/Kubernetes tools to deploy Greenbone
-  Vulnerability Management ([[https://community.greenbone.net/][GVM]]), 80-stars / 50-forks on my GitHub.
+* Projects
 
-- Design and implement an ansible playbook to setup kubernetes with
-  MetalLB, CephFS, SQL/NoSQL databases and state-full applications.
+- [[https://github.com/admirito/gvm-containers][gvm-containers]] - Docker/Kubernetes deployment for Greenbone
+  Vulnerability Management (80+ stars, 50+ forks on GitHub)
 
-- Fork [[https://github.com/skupperproject/skupper-proxy][skupper-proxy]] kubernetes controller FOSS project and add
-  features for better maintenance of inter-cluster communications,
-  used by the DevOps team.
+- [[https://launchpad.net/~mrazavi/+archive/ubuntu/gvm][GVM Ubuntu PPA]] - 10+ Debian packages maintained 5+ years
 
-- [[https://launchpad.net/~mrazavi/+archive/ubuntu/gvm][GVM Ubuntu PPA]]: About 10 C++/Python based debian Packages,
-  maintained more than 5 years for hundreds of users.
+- WinBay - LLM-powered auction analytics: eBay data mining with AI
+  enrichment, DuckDB, and Streamlit dashboard
 
-- [[https://github.com/admirito/kayna][kayna]] on my GitHub: GitLab CI tools for debian packaging.
+- Network measurement research - Multi-target connectivity monitoring
+  and service reachability analysis, deployed in containers across
+  distributed infrastructure
 
-- Use bash scripts to implement high availability with DRBD and
-  keepalived for a system with virtual machines.
+- [[https://www.backbox.org/][BackBox]] Linux distribution repository maintainer, 2015 -- 2018
 
-* Employment
-
-Senior Developer in the PayamPardaz Company, 2015 -- /Present/
-
-Developer in the AmnGostar Company, 2013 -- 2015
-
-Developer in the PayamPardaz Company, 2011 -- 2013
+- Additional open-source contributions: [[https://github.com/admirito/pymongowatch][PyMongoWatch]],
+  [[https://github.com/admirito/pitaya-form][PitayaForm]], [[https://github.com/admirito/kayna][kayna]], and patches to established FOSS projects
 
 * Education
 
@@ -116,18 +97,3 @@ Isfahan, Iran, 2009 -- 2011
 
 Bachelor of Arts in Computer Software Engineering at the University of
 Isfahan, Iran, 2005 -- 2009
-
-* Community
-
-[[https://www.backbox.org/][BackBox]] Linux distribution repository maintainer, 2015 - 2018
-
-[[https://www.openvas.org/][OpenVAS]] Vulnerability Assessment Scanner community package maintainer,
-2015 - 2018
-
-* Honors
-
-ACM International Collegiate Programming Contest (ICPC), Asia region,
-Tehran site contestant, 2009
-
-RoboCup, Mixed Reality League, the winner of the 3rd place ribbon,
-Suzhou international challenges, 2008
